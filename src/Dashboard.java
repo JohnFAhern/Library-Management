@@ -32,7 +32,6 @@ public class Dashboard extends javax.swing.JFrame {
         B2 = new javax.swing.JButton();
         B3 = new javax.swing.JButton();
         B6 = new javax.swing.JButton();
-        B7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -82,8 +81,6 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-        B7.setText("EDIT ADMIN");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -92,7 +89,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(60, 60, 60)
@@ -108,10 +105,6 @@ public class Dashboard extends javax.swing.JFrame {
                     .addComponent(B4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(B6, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE))
                 .addGap(60, 60, 60))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(B7, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(154, 154, 154))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,9 +123,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(B3)
                     .addComponent(B6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                .addComponent(B7)
-                .addContainerGap())
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         pack();
@@ -145,22 +136,32 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void B4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B4ActionPerformed
         // TODO add your handling code here:
+        Staff_Details books =new Staff_Details();
+        books.setVisible(true);
     }//GEN-LAST:event_B4ActionPerformed
 
     private void B5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B5ActionPerformed
         // TODO add your handling code here:
+        ADD_STAFF books =new ADD_STAFF();
+        books.setVisible(true);
     }//GEN-LAST:event_B5ActionPerformed
 
     private void B2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B2ActionPerformed
         // TODO add your handling code here:
+        Add_Books books =new Add_Books();
+        books.setVisible(true);
     }//GEN-LAST:event_B2ActionPerformed
 
     private void B3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B3ActionPerformed
         // TODO add your handling code here:
+        REMOVE_BOOKS books =new REMOVE_BOOKS();
+        books.setVisible(true);
     }//GEN-LAST:event_B3ActionPerformed
 
     private void B6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B6ActionPerformed
         // TODO add your handling code here:
+        REMOVE_STAFF books =new REMOVE_STAFF();
+        books.setVisible(true);
     }//GEN-LAST:event_B6ActionPerformed
 
     /**
@@ -205,7 +206,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JButton B4;
     private javax.swing.JButton B5;
     private javax.swing.JButton B6;
-    private javax.swing.JButton B7;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
